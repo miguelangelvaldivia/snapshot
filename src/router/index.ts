@@ -27,8 +27,14 @@ import SpaceBoost from '@/views/SpaceBoost.vue';
 
 // The frontend shows all spaces or just a single one, when being accessed
 // through that space's custom domain.
+//
+// [MAV] comented the following two lines and created a new const so the frontend
+// shows the single app instead of all of the spaces.
+
 const { domain, domainAlias } = useApp();
 const { mixpanel } = useMixpanel();
+
+// const { mixpanel } = useApp();
 
 const routes: any[] = [];
 
